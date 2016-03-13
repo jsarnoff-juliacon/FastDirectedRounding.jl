@@ -1,2 +1,2 @@
-## DirectedRounding.jl
+## DirectedRounding
 fast switched directed rounding
