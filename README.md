@@ -1,2 +1,2 @@
-# RoundingDirectly
+# RoundingDirected
 fast switched directed rounding
