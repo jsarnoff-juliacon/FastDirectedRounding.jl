@@ -18,7 +18,8 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
        hi  lo are the two parts of a precision-doubled floating point type
        
 
-RoundDown
+    RoundDown
+    
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
        +   +          hi              hi
@@ -26,7 +27,8 @@ RoundDown
        -   +          hi              hi
        -   -          prevfloat(hi)   nextAwayFromZero(hi) == prevFloat(hi)
        
-RoundUp
+    RoundUp
+    
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
        +   +          nextfloat(hi)   nextAwayFromZero(hi) == nextFloat(hi)
@@ -35,6 +37,7 @@ RoundUp
        -   -          hi              hi
        
        RoundFromZero
+       
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
        +   +          nextfloat(hi)   nextAwayFromZero(hi)
@@ -43,6 +46,7 @@ RoundUp
        -   -          prevfloat(hi)   nextAwayFromZero(hi
        
        RoundToZero
+       
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
        +   +          hi              hi
@@ -51,6 +55,7 @@ RoundUp
        -   -          hi              hi
        
        RoundNearest
+       
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
        +   +          hi              hi
