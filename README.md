@@ -36,7 +36,7 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
        -   +          nextfloat(hi)   nextNearerToZero(hi) == nextFloat(hi)
        -   -          hi              hi
        
-       RoundFromZero
+    RoundFromZero
        
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
@@ -45,7 +45,7 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
        -   +          hi              hi
        -   -          prevfloat(hi)   nextAwayFromZero(hi
        
-       RoundToZero
+    RoundToZero
        
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
@@ -54,7 +54,7 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
        -   +          nextfloat(hi)   nextNearerToZero(hi)
        -   -          hi              hi
        
-       RoundNearest
+    RoundNearest
        
        hi  lo         rounding        fastrounding
        --------------------------------------------------------------------
