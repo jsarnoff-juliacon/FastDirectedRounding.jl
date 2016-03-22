@@ -14,21 +14,21 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
 
   (note: this offers RoundFromZero for Floats, while Julia v0.5 does not)
 
-
-hi, lo are the two parts of a precision-doubled floating point type
 ```
+       hi  lo are the two parts of a precision-doubled floating point type
+       
 
-       RoundDown
+RoundDown
        hi  lo         rounding        fastrounding
-       -----------------------------------------------------------------------
+       --------------------------------------------------------------------
        +   +          hi              hi
        +   -          prevfloat(hi)   nextNearerToZero(hi) == prevFloat(hi)
        -   +          hi              hi
        -   -          prevfloat(hi)   nextAwayFromZero(hi) == prevFloat(hi)
        
-       RoundUp
+RoundUp
        hi  lo         rounding        fastrounding
-       -----------------------------------------------------------------------
+       --------------------------------------------------------------------
        +   +          nextfloat(hi)   nextAwayFromZero(hi) == nextFloat(hi)
        +   -          hi              hi
        -   +          nextfloat(hi)   nextNearerToZero(hi) == nextFloat(hi)
@@ -36,7 +36,7 @@ hi, lo are the two parts of a precision-doubled floating point type
        
        RoundFromZero
        hi  lo         rounding        fastrounding
-       -----------------------------------------------------------------------
+       --------------------------------------------------------------------
        +   +          nextfloat(hi)   nextAwayFromZero(hi)
        +   -          hi              hi
        -   +          hi              hi
@@ -44,7 +44,7 @@ hi, lo are the two parts of a precision-doubled floating point type
        
        RoundToZero
        hi  lo         rounding        fastrounding
-       -----------------------------------------------------------------------
+       --------------------------------------------------------------------
        +   +          hi              hi
        +   -          prevfloat(hi)   nextNearerToZero(hi)
        -   +          nextfloat(hi)   nextNearerToZero(hi)
@@ -52,7 +52,7 @@ hi, lo are the two parts of a precision-doubled floating point type
        
        RoundNearest
        hi  lo         rounding        fastrounding
-       -----------------------------------------------------------------------
+       --------------------------------------------------------------------
        +   +          hi              hi
        +   -          hi              hi
        -   +          hi              hi
