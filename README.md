@@ -4,7 +4,7 @@
                                                               Jeffrey Sarnoff © 2016-Mar-22 at New York
 ```
 
-# Use
+#### Use
 
 with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a rounding mode
   (the rounding modes are RoundNearest, RoundUp, RoundDown, RoundToZero, RoundFromZero)
