@@ -18,8 +18,8 @@ function (/){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
     eftRound(hi, lo, rounding)
 end
 
-function (square){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
-    hi,lo = eftSquare(a)
+function (sqr){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
+    hi,lo = eftSqr(a)
     eftRound(hi, lo, rounding)
 end
 
