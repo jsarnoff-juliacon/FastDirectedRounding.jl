@@ -1,7 +1,7 @@
 module DirectedRounding
 
 
-import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftDivApprox
+import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftDivApprox, eftSquare, eftSqrtApprox
 using AdjacentFloat
 
 typealias Float Union{Float64,Float32,Float16}
