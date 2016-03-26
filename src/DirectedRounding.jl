@@ -1,5 +1,9 @@
 module DirectedRounding
 
-!isdefined(Float) && typealias Float AbstractFloat;
+
+import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftDivApprox
+using AdjacentFloat
+
+typealias Float Union{Float64,Float32,Float16}
 
 end # module
