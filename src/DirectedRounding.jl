@@ -1,7 +1,7 @@
 module DirectedRounding
 
 import Base: (+),(-),(*),(/),sqrt
-import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftDivApprox, eftSquare, eftSqrtApprox
+import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftDivApprox, eftSquare #, eftSqrtApprox
 using AdjacentFloat
 
 export (+),(-),(*),(/),sqrt,square
