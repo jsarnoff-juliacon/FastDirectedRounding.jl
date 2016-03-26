@@ -14,7 +14,7 @@ function (*){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
 end
 
 function (/){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
-    hi,lo = eftDiv2Approx(a,b)
+    hi,lo = eftDivApprox(a,b)
     eftRound(hi, lo, rounding)
 end
 
