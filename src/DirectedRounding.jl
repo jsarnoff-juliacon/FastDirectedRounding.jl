@@ -11,6 +11,6 @@ export (+),(-),(*),(/),sqrt,sqr
 
 
 include("eftRound.jl")
-include("directedRounding.jl")
+include("directRounding.jl")
 
 end # module
