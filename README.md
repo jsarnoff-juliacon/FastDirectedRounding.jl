@@ -6,7 +6,7 @@
 
 #### Use
 
-with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a rounding mode
+with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a rounding mode  
   (the rounding modes are RoundNearest, RoundUp, RoundDown, RoundToZero, RoundFromZero)
 
               value = (op)(a, b, rounding )       
