@@ -1,5 +1,6 @@
 #=
-     using the result of an errorfree transformation to drive highly performant multi-directed roundings
+     using the result of an errorfree transformation 
+     to drive highly performant multi-directed roundings
 =#
 
 @inline eftRound{T<:AbstractFloat}(hi::T, lo::T, ::RoundingMode{:ToZero}) = 
