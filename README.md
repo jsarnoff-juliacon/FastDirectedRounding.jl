@@ -1,7 +1,7 @@
 ## DirectedRounding
 ###### fast switching directed rounding for inline arithmetic
 ```ruby
-                                                       Jeffrey Sarnoff © 2016-Mar-22 « New York, USA
+                                                       Jeffrey Sarnoff © 2016-Mar-22 in New York City
 ```
 
 #### Use
