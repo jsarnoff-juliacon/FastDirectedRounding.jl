@@ -1,5 +1,5 @@
 ## DirectedRounding
-###### fast switching directed rounding for inline arithmetic
+###### faster directed roundings, rounding without rounding modes
 ```ruby
                                                        Jeffrey Sarnoff © 2016-Mar-22 in New York City
 ```
