@@ -1,5 +1,5 @@
 ## FastDirectedRounding
-###### faster roundings without switching the floating point rouding context
+###### faster rounding up and down and nearest without switching the fpu's rounding mode
 ```ruby
                                                        Jeffrey Sarnoff © 2016-Mar-22 in New York City
 ```
