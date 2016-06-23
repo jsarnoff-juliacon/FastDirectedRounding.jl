@@ -1,4 +1,4 @@
-module DirectedRounding
+module FastDirectedRounding
 
 import Base: (+),(-),(*),(/),sqrt
 
