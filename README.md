@@ -1,5 +1,5 @@
-## FastRounding
-###### faster directed roundings, rounding without rounding modes
+## FastDirectedRounding
+###### faster roundings without switching the floating point rouding context
 ```ruby
                                                        Jeffrey Sarnoff © 2016-Mar-22 in New York City
 ```
