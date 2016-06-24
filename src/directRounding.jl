@@ -14,7 +14,7 @@ function (*){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
 end
 
 function (/){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
-    hi,lo = eftDivApprox(a,b)
+    hi,lo = accDiv(a,b)
     eftRound(hi, lo, rounding)
 end
 
@@ -24,6 +24,6 @@ function (sqr){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
 end
 
 function (sqrt){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
-    hi,lo = eftSqrtApprox(a)
+    hi,lo = accSqrt(a)
     eftRound(hi, lo, rounding)
 end
