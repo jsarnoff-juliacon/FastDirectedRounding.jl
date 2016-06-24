@@ -1,12 +1,12 @@
 module FastDirectedRounding
 
-import Base: (+),(-),(*),(/),sqrt
+import Base: (+), (-), (*), (/), (\), sqrt, hypot, inv
 
 using AdjacentFloat
 
-import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftSqr, accDiv, accSqrt
+import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftSqr, accDivForSign, accInv, accSqrtForSign
 
-export (+),(-),(*),(/),sqrt,sqr
+export sqr
 
 
 include("eftRound.jl")
