@@ -5,7 +5,7 @@ import Base: (+),(-),(*),(/),sqrt
 using Genera
 using AdjacentFloat
 
-import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftDivApprox, eftSqr, eftSqrtApprox
+import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftSqr, accDiv, accSqrt
 
 export (+),(-),(*),(/),sqrt,sqr
 
