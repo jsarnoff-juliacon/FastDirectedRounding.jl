@@ -1,7 +1,7 @@
 ## FastDirectedRounding
 ###### faster rounding up and down and nearest without switching the fpu's rounding mode
 ```ruby
-                                                       Jeffrey Sarnoff © 2016-Mar-22 in New York City
+                                                       Jeffrey Sarnoff © 2016-Jun-25 in Cambridge, MA
 ```
 
 #### Use
