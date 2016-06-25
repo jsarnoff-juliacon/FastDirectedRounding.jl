@@ -14,7 +14,7 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
 
   (this package offers RoundFromZero for Floats, while Julia v0.5 does not)
 
-##### Rounding logic mapped through the AdjacentFloat package
+##### Rounding made faster (q.v. src dir, AdjacentFloat.jl)
 ```
 # hi, lo are the two parts of a precision-doubled floating point type
 # given a rounding mode, the signs of hi and lo select the rounding logic
