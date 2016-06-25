@@ -12,11 +12,12 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
               value = (op)(a, b, rounding )       
               c     = ( +)(a, b, RoundDown)
 
-  (note: this offers RoundFromZero for Floats, while Julia v0.5 does not)
+  (this package offers RoundFromZero for Floats, while Julia v0.5 does not)
 
+#### Rounding Logic
 ```
-       hi  lo are the two parts of a precision-doubled floating point type
-       
+# hi, lo are the two parts of a precision-doubled floating point type
+# given a rounding mode, the signs of hi and lo select the rounding logic
 
     RoundDown
     
