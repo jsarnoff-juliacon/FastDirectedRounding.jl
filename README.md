@@ -14,14 +14,14 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
 
   (this package offers RoundFromZero for Floats, while Julia v0.5 does not)
 
-#### Rounding Logic
+#### Directed Rounding logic and use of the AdjacentFloat package
 ```
 # hi, lo are the two parts of a precision-doubled floating point type
 # given a rounding mode, the signs of hi and lo select the rounding logic
 
     RoundDown
     
-       hi  lo         rounding        fastrounding
+       hi  lo         rounding        fast rounding
        --------------------------------------------------------------------
        +   +          hi              hi
        +   -          prevfloat(hi)   nextNearerToZero(hi) == prevFloat(hi)
@@ -30,7 +30,7 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
        
     RoundUp
     
-       hi  lo         rounding        fastrounding
+       hi  lo         rounding        fast rounding
        --------------------------------------------------------------------
        +   +          nextfloat(hi)   nextAwayFromZero(hi) == nextFloat(hi)
        +   -          hi              hi
@@ -39,25 +39,25 @@ with a,b floating point values, op in {+,-,*,/,sqrt,square} and rounding a round
        
     RoundFromZero
        
-       hi  lo         rounding        fastrounding
+       hi  lo         rounding        fast rounding
        --------------------------------------------------------------------
-       +   +          nextfloat(hi)   nextAwayFromZero(hi)
+       +   +          nextfloat(hi)   nextAwayFromZero(hi) == nextFloat(hi)
        +   -          hi              hi
        -   +          hi              hi
-       -   -          prevfloat(hi)   nextAwayFromZero(hi
+       -   -          prevfloat(hi)   nextAwayFromZero(hi) == prevFloat(hi)
        
     RoundToZero
        
-       hi  lo         rounding        fastrounding
+       hi  lo         rounding        fast rounding
        --------------------------------------------------------------------
        +   +          hi              hi
-       +   -          prevfloat(hi)   nextNearerToZero(hi)
-       -   +          nextfloat(hi)   nextNearerToZero(hi)
+       +   -          prevfloat(hi)   nextNearerToZero(hi) == prevFloat(hi)
+       -   +          nextfloat(hi)   nextNearerToZero(hi) == prevFloat(hi)
        -   -          hi              hi
        
     RoundNearest
        
-       hi  lo         rounding        fastrounding
+       hi  lo         rounding        fast rounding
        --------------------------------------------------------------------
        +   +          hi              hi
        +   -          hi              hi
