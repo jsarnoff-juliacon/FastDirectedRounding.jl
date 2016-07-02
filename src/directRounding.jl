@@ -1,5 +1,5 @@
 function (inv){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
-    hi,lo = accInv(a)
+    hi,lo = accInvForSign(a)
     eftRound(hi, lo, rounding)
 end
 
@@ -19,12 +19,12 @@ function (*){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
 end
 
 function (/){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
-    hi,lo = accDiv(a,b)
+    hi,lo = accDivForSign(a,b)
     eftRound(hi, lo, rounding)
 end
 
 function (\){T<:AbstractFloat, R<:RoundingMode}(a::T, b::T, rounding::R)
-    hi,lo = accDiv(b,a)
+    hi,lo = accDivForSign(b,a)
     eftRound(hi, lo, rounding)
 end
 
@@ -34,6 +34,6 @@ function (sqr){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
 end
 
 function (sqrt){T<:AbstractFloat, R<:RoundingMode}(a::T, rounding::R)
-    hi,lo = accSqrt(a)
+    hi,lo = accSqrtForSign(a)
     eftRound(hi, lo, rounding)
 end
