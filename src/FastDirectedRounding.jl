@@ -4,7 +4,8 @@ import Base: (+), (-), (*), (/), (\), sqrt, hypot, inv
 
 using AdjacentFloat
 
-import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftSqr, accDivForSign, accInv, accSqrtForSign
+import ErrorfreeArithmetic: eftAdd, eftSub, eftMul, eftSqr, 
+    accInv, accDiv, accSqrt, accInvForSign, accDivForSign, accSqrtForSign
 
 export sqr
 
